@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ryan Reynard | Home</title>
+  <title>Your Name | Home</title>
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <!-- Bootstrap Icons -->
@@ -188,4 +188,225 @@
     #passions {
       background:
         linear-gradient(to right, rgba(13,27,42,.92), rgba(27,42,59,.88)),
-        url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600&q=80') center/cover no-re
+        url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600&q=80') center/cover no-repeat;
+      padding: 80px 0;
+    }
+    .passion-item i { font-size: 2rem; color: var(--gold); }
+    .passion-item h6 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: #fff;
+      margin-top: .5rem;
+      margin-bottom: .2rem;
+    }
+    .passion-item p { font-size: .88rem; color: #a0b8cc; margin: 0; }
+
+    /* ── Footer ── */
+    footer {
+      background-color: #080f18;
+      border-top: 2px solid var(--gold);
+      padding: 40px 0 24px;
+    }
+    footer .brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      color: var(--gold);
+    }
+    .social-link {
+      color: #8fa8c0;
+      font-size: 1.4rem;
+      margin: 0 8px;
+      transition: color .2s;
+    }
+    .social-link:hover { color: var(--gold); }
+    .footer-copy { font-size: .8rem; color: #4a6070; }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════ NAVBAR ══════════════ -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Your Name</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon" style="filter:invert(1)"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-lg-2">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="professional.html">Professional</a></li>
+        <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="scratch.html">Hobbies</a></li>
+        <li class="nav-item"><a class="nav-link" href="webapp.html">Web App</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="hero">
+  <div class="container">
+    <p class="hero-eyebrow">Finance &amp; Real Estate · Construction Management</p>
+    <h1>Built for<br/><span>the Grind.</span></h1>
+    <p class="hero-sub mt-3 mb-4">
+      Student. Builder. Angler. Athlete. I bring the same relentless work ethic
+      from the gym and the river to every project I take on.
+    </p>
+    <div class="d-flex flex-wrap gap-3">
+      <a href="professional.html" class="btn-gold btn">View My Work</a>
+      <a href="scratch.html" class="btn-outline-gold btn">Explore Hobbies</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ ABOUT ══════════════ -->
+<section id="about">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <p class="section-label">About Me</p>
+        <h2 class="section-title">More Than a<br/>Business Student</h2>
+        <div class="gold-bar"></div>
+        <p style="color:#c8d6e5; line-height:1.8;">
+          I'm a Finance and Real Estate student with hands-on experience managing
+          construction projects and running my own landscaping business. Whether I'm
+          reading a blueprint, studying a balance sheet, or tying a dry fly at 5 AM —
+          I show up with purpose.
+        </p>
+        <p style="color:#8fa8c0; line-height:1.8; font-size:.95rem;">
+          I believe that real-world grit separates good from great. My background
+          in construction management taught me leadership, logistics, and accountability
+          long before any classroom did.
+        </p>
+      </div>
+      <div class="col-lg-6">
+        <div class="row g-4">
+          <div class="col-6">
+            <div class="about-stat">
+              <div class="num">5+</div>
+              <div class="lbl">Years in Construction</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="about-stat">
+              <div class="num">2</div>
+              <div class="lbl">Businesses Managed</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="about-stat">
+              <div class="num">500+</div>
+              <div class="lbl">Pounds Lifted (Total)</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="about-stat">
+              <div class="num">∞</div>
+              <div class="lbl">Miles of River Fished</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ HIGHLIGHT CARDS ══════════════ -->
+<section id="highlights">
+  <div class="container">
+    <div class="text-center mb-5">
+      <p class="section-label">Navigate</p>
+      <h2 class="section-title">What I'm About</h2>
+      <div class="gold-bar mx-auto"></div>
+    </div>
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-3">
+        <a href="professional.html" class="hi-card p-4">
+          <div class="hi-card-icon mb-3"><i class="bi bi-briefcase-fill"></i></div>
+          <h5>Professional</h5>
+          <p>Construction management, landscaping, and real-world leadership experience.</p>
+          <div class="arrow">View Experience →</div>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <a href="education.html" class="hi-card p-4">
+          <div class="hi-card-icon mb-3"><i class="bi bi-mortarboard-fill"></i></div>
+          <h5>Education</h5>
+          <p>Finance & Real Estate studies, relevant coursework, and academic milestones.</p>
+          <div class="arrow">View Education →</div>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <a href="scratch.html" class="hi-card p-4">
+          <div class="hi-card-icon mb-3"><i class="bi bi-water"></i></div>
+          <h5>Hobbies</h5>
+          <p>Fly fishing rivers, chasing personal records in powerlifting, and living outdoors.</p>
+          <div class="arrow">View Hobbies →</div>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <a href="webapp.html" class="hi-card p-4">
+          <div class="hi-card-icon mb-3"><i class="bi bi-lightning-charge-fill"></i></div>
+          <h5>Web App</h5>
+          <p>An interactive One-Rep Max Calculator built with AI — try it yourself.</p>
+          <div class="arrow">Launch App →</div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ PASSIONS BANNER ══════════════ -->
+<section id="passions">
+  <div class="container">
+    <div class="text-center mb-5">
+      <p class="section-label">Passions</p>
+      <h2 class="section-title">Life Outside the Classroom</h2>
+      <div class="gold-bar mx-auto"></div>
+    </div>
+    <div class="row g-4 text-center">
+      <div class="col-sm-6 col-lg-3 passion-item">
+        <i class="bi bi-water"></i>
+        <h6>Fly Fishing</h6>
+        <p>Chasing cutthroats on backcountry rivers at dawn.</p>
+      </div>
+      <div class="col-sm-6 col-lg-3 passion-item">
+        <i class="bi bi-trophy-fill"></i>
+        <h6>Powerlifting</h6>
+        <p>Squat, bench, deadlift — chasing new PRs every week.</p>
+      </div>
+      <div class="col-sm-6 col-lg-3 passion-item">
+        <i class="bi bi-building"></i>
+        <h6>Construction</h6>
+        <p>Building real things with real teams under real pressure.</p>
+      </div>
+      <div class="col-sm-6 col-lg-3 passion-item">
+        <i class="bi bi-graph-up-arrow"></i>
+        <h6>Finance</h6>
+        <p>Understanding value, risk, and how money moves through markets.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer class="text-center">
+  <div class="container">
+    <div class="brand mb-3">Your Name</div>
+    <div class="mb-3">
+      <a href="https://linkedin.com" target="_blank" class="social-link"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com" target="_blank" class="social-link"><i class="bi bi-github"></i></a>
+      <a href="mailto:you@example.com" class="social-link"><i class="bi bi-envelope-fill"></i></a>
+    </div>
+    <p class="footer-copy mb-0">&copy; 2025 Your Name. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
